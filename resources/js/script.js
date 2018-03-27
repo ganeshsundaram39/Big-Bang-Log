@@ -105,13 +105,13 @@ const getEpisodeByName = (name = 'abc') => {
 /* ---------- Display Information of all episodes -------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
 const getAllEpisodes = () => {
-    
+
     // Image
     console.log(`%c          `, `font-size: 250px; background: url(${bbtDataStore['image'].medium}) no-repeat;`);
     // Summary
     console.log(`%c\t\t${bbtDataStore['summary'].replace('<p>','').replace('</p>','').replace('<b>','').replace('</b>','')}`, `font-size:17px;  font-family:cursive;`);
     // URL
-    console.log(`%cLink: ${bbtDataStore['url'].replace('//','/')}`, 'font-size:15px; font-family:cursive;');
+    console.log(`%cLink: ${bbtDataStore['url']}`, 'font-size:15px; font-family:cursive;');
     // Header
     console.log(`%c\nEpisodes:`, `font-size:20px; color:red; font-family:cursive;`);
 
